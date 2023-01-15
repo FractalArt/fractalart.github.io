@@ -1,0 +1,19 @@
+/* in order to to make the background transparent (if needed) one needs to
+make this hack with the ::after html setting*/
+html::after {
+  background-image: url(../images/attractor.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1.0;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
